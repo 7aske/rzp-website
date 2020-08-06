@@ -1,0 +1,26 @@
+footer#footer {
+  background-color: #232931;
+}
+footer#footer .footer-content {
+  padding-top: 2em;
+  border-top: 1px solid #eeeeee;
+}
+footer#footer .to-top {
+  height: 2em;
+}
+footer#footer .to-top a {
+  color: #4ecca3 !important;
+}
+footer#footer .to-top a:hover {
+  color: #eeeeee !important;
+  border-bottom: 1px solid #eeeeee;
+}
+footer#footer .footer-copyright {
+  background-color: #393e46;
+}
+footer#footer ul li, footer#footer ul li a {
+  color: #4ecca3;
+}
+footer#footer ul li:hover, footer#footer ul li a:hover {
+  text-decoration: underline;
+}

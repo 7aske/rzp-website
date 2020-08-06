@@ -1,0 +1,65 @@
+@import "../../assets/css/theme";
+
+#header {
+
+	padding-top: 8em;
+	color: $theme-white;
+
+	.title {
+		color: $theme-green;
+		font-size: 48px;
+	}
+
+	.text {
+
+		font-size: 20px;
+		font-weight: 100;
+	}
+
+	.collection {
+		&, & li {
+			background-color: $theme-black;
+		}
+
+		.collection-header {
+			padding-top: 1em;
+			font-size: 26px !important;
+			color: $theme-white;
+			border-bottom: none;
+		}
+
+		.collection-item {
+			padding: {
+				top: 1.5em;
+				bottom: 1.5em;
+				left: 1.4em;
+			};
+
+			border-bottom: 2px solid $theme-grey !important;
+
+			&:last-of-type {
+				border-bottom: none !important;
+			}
+
+			a {
+				padding-bottom: .25em;
+				color: $theme-green;
+
+				&:hover {
+					border-bottom: 2px solid $theme-green;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	#header {
+		.title {
+			font-size: 36px;
+		}
+
+		padding-top: 0;
+	}
+}

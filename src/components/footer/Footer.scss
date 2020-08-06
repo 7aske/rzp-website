@@ -1,0 +1,37 @@
+@import "../../assets/css/theme";
+
+footer#footer {
+	background-color: $theme-black;
+
+	& .footer-content {
+		padding-top: 2em;
+		border-top: 1px solid $theme-white;
+	}
+
+	& .to-top {
+		a {
+			color: $theme-green !important;
+
+			&:hover {
+				color: $theme-white !important;
+				border-bottom: 1px solid $theme-white;
+			}
+		}
+
+		height: 2em;
+	}
+
+	.footer-copyright {
+		background-color: $theme-grey;
+	}
+
+	ul li {
+		&, & a {
+			color: $theme-green;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.theme-black-bg {
+  background-color: #232931 !important;
+}
+
+.theme-black {
+  color: #232931 !important;
+}
+
+.theme-grey-bg {
+  background-color: #393e46 !important;
+}
+
+.theme-grey {
+  color: #393e46 !important;
+}
+
+.theme-green-bg {
+  background-color: #4ecca3 !important;
+}
+
+.theme-green {
+  color: #4ecca3 !important;
+}
+
+.theme-white-bg {
+  background-color: #eeeeee !important;
+}
+
+.theme-white {
+  color: #eeeeee !important;
+}
+
+.theme-transparent {
+  background-color: transparent !important;
+}
+
+.theme-transparent-bg {
+  color: transparent !important;
+}

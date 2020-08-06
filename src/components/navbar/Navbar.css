@@ -1,0 +1,48 @@
+nav#nav {
+  position: absolute;
+  top: 0;
+  transition: all 500ms;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 1000;
+  background-color: #232931;
+  height: 7em;
+}
+nav#nav.fixed {
+  position: fixed;
+  top: 0;
+  height: 4em !important;
+  background-color: #393e46;
+}
+nav#nav.fixed .spacer {
+  display: none !important;
+}
+nav#nav .nav-logo, nav#nav .nav-logo img {
+  height: 100%;
+}
+nav#nav .spacer {
+  display: block;
+  height: 3em;
+}
+nav#nav .menu {
+  display: block;
+  height: 4em;
+}
+nav#nav ul.menu li a:hover {
+  color: #4ecca3;
+  background-color: #232931;
+  border-bottom: 2px solid #4ecca3;
+  height: 4em;
+}
+
+@media screen and (max-width: 900px) {
+  nav#nav {
+    height: 5em;
+  }
+  nav#nav .spacer {
+    height: 1em;
+  }
+  nav#nav .menu {
+    height: 4em;
+  }
+}

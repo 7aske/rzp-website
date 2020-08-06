@@ -1,0 +1,60 @@
+@import "../../assets/css/theme";
+
+nav#nav {
+	&.fixed {
+		position: fixed;
+		top: 0;
+		height: 4em !important;
+		background-color: $theme-grey;
+	}
+
+	&.fixed .spacer {
+		display: none !important;
+	}
+
+	position: absolute;
+	top: 0;
+	transition: all 500ms;
+	margin-left: 0;
+	margin-right: 0;
+	z-index: 1000;
+	background-color: $theme-black;
+	height: 7em;
+
+	.nav-logo, .nav-logo img {
+		height: 100%;
+	}
+
+	.spacer {
+		display: block;
+		height: 3em;
+	}
+
+	.menu {
+		display: block;
+		height: 4em;
+	}
+
+	ul.menu li a {
+		&:hover {
+			color: $theme-green;
+			background-color: $theme-black;
+			border-bottom: 2px solid $theme-green;
+			height: 4em;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	nav#nav {
+		height: 5em;
+
+		.spacer {
+			height: 1em;
+		}
+
+		.menu {
+			height: 4em;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+nav {
+  box-shadow: none !important;
+}
+
+.collection {
+  border: none !important;
+}
+
+input::placeholder {
+  color: #393e46;
+}
+
+input {
+  color: #eeeeee;
+}
+
+textarea {
+  color: #eeeeee;
+}

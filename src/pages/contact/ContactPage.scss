@@ -1,0 +1,23 @@
+@import "../../assets/css/theme";
+
+div#contact-page {
+	min-height: 60vh;
+	padding-top: 2em;
+	.contact-us {
+		color: $theme-green;
+	}
+	.contact-us ~ p {
+		color: $theme-white;
+	}
+	.art {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 900px){
+	div#contact-page {
+		padding-top: 2em;
+	}
+}

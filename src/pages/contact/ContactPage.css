@@ -1,0 +1,19 @@
+div#contact-page {
+  min-height: 60vh;
+  padding-top: 2em;
+}
+div#contact-page .contact-us {
+  color: #4ecca3;
+}
+div#contact-page .contact-us ~ p {
+  color: #eeeeee;
+}
+div#contact-page .art img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  div#contact-page {
+    padding-top: 2em;
+  }
+}

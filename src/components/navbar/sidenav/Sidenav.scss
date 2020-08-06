@@ -1,0 +1,23 @@
+@import "../../../assets/css/theme";
+
+#sidenav {
+	background-color: $theme-grey;
+
+	li, li a {
+		color: $theme-white;
+	}
+
+	.user-view {
+		padding: 0 !important;
+
+		.name {
+			color: $theme-green !important;
+		}
+
+		a, span {
+			&.name, &.email {
+				padding-left: 2em;
+			}
+		}
+	}
+}

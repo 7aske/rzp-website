@@ -1,0 +1,21 @@
+@import "theme";
+
+nav {
+	box-shadow: none !important;
+}
+
+.collection {
+	border: none !important;
+}
+
+input::placeholder {
+	color: $theme-grey;
+}
+
+input {
+	color: $theme-white;
+}
+
+textarea {
+	color: $theme-white;
+}

@@ -1,3 +1,74 @@
+@import "../../assets/css/theme";
+
 #about-page {
 	min-height: 60vh;
+	color: $theme-white;
+
+	.col h4 {
+		text-align: center;
+	}
+
+	.how-we-work-title, .how-we-work-text {
+		text-align: center;
+	}
+
+	.how-we-work-title {
+		color: $theme-green;
+	}
+
+	.how-we-work-text {
+		font-size: 1.5em;
+	}
+
+	& > .row {
+		padding-top: 2em;
+
+		.col {
+			max-height: 40vh;
+
+			&.text {
+
+				h4 {
+					color: $theme-green;
+				}
+
+				p {
+					font-size: 1.25em;
+				}
+
+				ul {
+					list-style-type: square !important;
+					li {
+						padding-top: 2em;
+					}
+				}
+
+				padding-top: 4em;
+			}
+		}
+	}
+
+	.process {
+		.col {
+			h4 {
+				color: $theme-green;
+			}
+			text-align: center;
+		}
+		img {
+			width: 90% !important;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#about-page {
+		.row {
+			.col {
+				&.text {
+					padding-top: 1em;
+				}
+			}
+		}
+	}
 }

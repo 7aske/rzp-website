@@ -13,6 +13,13 @@ input::placeholder {
 input {
   color: #eeeeee;
 }
+input[type=submit] {
+  background-color: #4ecca3;
+}
+input[type=submit]:hover {
+  background-color: #c2eddf;
+  color: #393e46;
+}
 
 textarea {
   color: #eeeeee;

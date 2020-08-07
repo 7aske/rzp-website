@@ -2,7 +2,7 @@ import * as React from "react";
 import { ContactForm } from "../../components/contactForm/ContactForm";
 import "./ContactPage.css";
 // @ts-ignore
-import contactArt from "../../assets/img/contact/contact-art.png";
+import message from "../../assets/img/contact/message.svg";
 import useLocale from "../../hooks/useLocale";
 import localization from "./localization";
 import { useEffect } from "react";
@@ -21,7 +21,7 @@ export const ContactPage = () => {
 					<ContactForm/>
 				</div>
 				<div className="col s12 m12 l6 art hide-on-med-and-down animate__animated animate__fadeInUp animate__fast">
-					<img src={contactArt} alt="Contact Art"/>
+					<img src={message} alt="Contact Art"/>
 				</div>
 			</div>
 		</div>

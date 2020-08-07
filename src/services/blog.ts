@@ -27,5 +27,9 @@ const mockPosts: Post[] = [
 ];
 
 export const getLatestPosts = (): Promise<Post[]> => {
-	return new Promise((resolve => resolve(mockPosts)))
+	return new Promise((resolve => {
+		setTimeout(()=>{
+			resolve(mockPosts)
+		}, 1000)
+	}))
 };

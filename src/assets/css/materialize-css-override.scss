@@ -13,6 +13,14 @@ input::placeholder {
 }
 
 input {
+	&[type="submit"] {
+		background-color: $theme-green;
+		&:hover{
+			background-color: $theme-green-lightest;
+			color: $theme-grey;
+		}
+	}
+
 	color: $theme-white;
 }
 

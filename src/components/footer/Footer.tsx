@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { blogUrl } from "../../globals";
 import localization from "./localization";
 import useLocale from "../../hooks/useLocale";
 import routes from "../../router/localization";
@@ -14,8 +15,7 @@ export const Footer = () => {
 		<li><Link className="sidenav-close" to="/about">{routes[locale].about}</Link></li>,
 		<li><Link className="sidenav-close" to="/team">{routes[locale].team}</Link></li>,
 		<li><Link className="sidenav-close" to="/contact">{routes[locale].contact}</Link></li>,
-		<li><a className="sidenav-close" href="#">{routes[locale].blog}</a></li>,
-		<li><a className="sidenav-close" href="#">Blog</a></li>,
+		<li><a className="sidenav-close" target="blank" href={blogUrl}>{routes[locale].blog}</a></li>,
 	];
 
 	return (

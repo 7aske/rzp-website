@@ -4,6 +4,7 @@ export const members: Member[] = [
 	{
 		firstName: "Nikola",
 		lastName: "Tasić",
+		email:"ntasic7@gmail.com",
 		picture: profile,
 		role: {
 			en: "Developer",
@@ -35,6 +36,7 @@ export const members: Member[] = [
 	{
 		firstName: "Nikola",
 		lastName: "Cvetković",
+		email: "test@example.com",
 		picture: profile,
 		role: {
 			en: "Developer",
@@ -49,6 +51,7 @@ export const members: Member[] = [
 	{
 		firstName: "Dimitrije",
 		lastName: "Stojković",
+		email: "test@example.com",
 		picture: profile,
 		role: {
 			en: "Designer",
@@ -63,6 +66,7 @@ export const members: Member[] = [
 	{
 		firstName: "Petar",
 		lastName: "Kocić",
+		email: "test@example.com",
 		picture: profile,
 		role: {
 			en: "Developer",

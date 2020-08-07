@@ -1,13 +1,14 @@
 import * as React from "react";
 import { createRef, useEffect } from "react";
 import useLocale from "../../hooks/useLocale";
+import { SocialMediaIcon } from "../socialMediaIcon/SocialMediaIcon";
 import localization from "./localization";
 import "./MemberCard.css";
 
 type MemberCardProps = {
 	member: Member
 };
-export const MemberCard = ({member: {about, firstName, lastName, picture, role, socialMedia}}: MemberCardProps) => {
+export const MemberCard = ({member: {about, firstName, lastName, email, picture, role, socialMedia}}: MemberCardProps) => {
 	const [locale] = useLocale();
 	const modalRef = createRef<HTMLDivElement>();
 	const modalId = btoa(Math.random().toString());
@@ -38,9 +39,15 @@ export const MemberCard = ({member: {about, firstName, lastName, picture, role, 
 						<div className="col s12 m12 l4">
 							<img src={picture} alt="Profile picture"/>
 						</div>
-						<div className="col s12 m12 l8">
+						<div className="col s12 m12 l8 info">
 							<h4>{firstName} {lastName}</h4>
+							<h6><a className="email" href={"mailto:" + email}>{email}</a></h6>
+							<h6>{role[locale]}</h6>
 							<p>{about[locale]}</p>
+							<div className="social-media">
+								{socialMedia.length > 0 ? <h6>{localization[locale].socialMedia}</h6> : ""}
+								{socialMedia.map(soc => <SocialMediaIcon socialMedia={soc}/>)}
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,17 +1,20 @@
 type MemberCardLocalizationStrings = {
+	socialMedia: string;
 	more: string;
 	close: string;
 	[key: string]: string;
 }
 
 const rs: MemberCardLocalizationStrings = {
-	more:"Više",
-	close: "Zatvori"
+	socialMedia: "Društvene mreže",
+	more: "Više",
+	close: "Zatvori",
 };
 
 const en: MemberCardLocalizationStrings = {
+	socialMedia: "Social media",
 	more: "More",
-	close: "Close"
+	close: "Close",
 };
 
 const localization: Localized<MemberCardLocalizationStrings> = {en, rs};

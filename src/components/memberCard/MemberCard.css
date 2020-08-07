@@ -32,6 +32,13 @@
 .modal .modal-content img {
   width: 100%;
 }
+.modal .modal-content .info .email {
+  color: #88dcc1;
+}
+.modal .modal-content .info .email:hover {
+  text-decoration: underline;
+  color: #eeeeee;
+}
 .modal .modal-close {
   color: #4ecca3;
 }
@@ -41,6 +48,11 @@
 }
 .modal .modal-footer {
   width: 100% !important;
+  background-color: #232931 !important;
+  border-color: #232931;
+}
+.modal .social-media {
+  text-align: right;
 }
 
 @media screen and (max-width: 900px) {
@@ -51,7 +63,10 @@
   .member-modal .modal-content {
     height: 90% !important;
   }
-  .member-modal .modal-content h4 {
+  .member-modal .modal-content h4, .member-modal .modal-content h6 {
+    text-align: center;
+  }
+  .member-modal .social-media {
     text-align: center;
   }
 }

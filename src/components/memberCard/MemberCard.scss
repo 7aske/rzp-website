@@ -46,6 +46,14 @@
 		img {
 			width: 100%;
 		}
+
+		.info .email {
+			color: $theme-green-light;
+			&:hover {
+				text-decoration: underline;
+				color: $theme-white;
+			}
+		}
 	}
 
 	.modal-close {
@@ -59,6 +67,12 @@
 
 	.modal-footer {
 		width: 100% !important;
+		background-color: $theme-black !important;
+		border-color: $theme-black;
+	}
+
+	.social-media {
+		text-align: right;
 	}
 }
 
@@ -67,14 +81,20 @@
 		.card-image {
 			padding: 3em 3em 1em 3em;
 		}
+
+
 	}
 	.member-modal {
 		.modal-content {
 			height: 90% !important;
-			h4 {
+
+			h4, h6 {
 				text-align: center;
 			}
 		}
 
+		.social-media {
+			text-align: center;
+		}
 	}
 }

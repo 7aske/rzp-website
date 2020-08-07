@@ -14,6 +14,6 @@ const en: ContactPageLocalizationStrings = {
 	text: "EN - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur distinctio ducimus error eveniet facilis, fuga impedit iste maxime minus perspiciatis quam quas saepe tenetur ullam vitae, voluptas voluptate. Libero.",
 };
 
-const localization: Record<string, ContactPageLocalizationStrings> = {en, rs};
+const localization: Localized<ContactPageLocalizationStrings> = {en, rs};
 
 export default localization;

@@ -17,6 +17,6 @@ const en: HeaderLocalizationStrings = {
 	latestPosts: "Latest posts",
 };
 
-const localization: Record<string, HeaderLocalizationStrings> = {en, rs};
+const localization: Localized<HeaderLocalizationStrings> = {en, rs};
 
 export default localization;

@@ -23,6 +23,6 @@ const en: RoutesLocalizationStrings = {
 	team: "Team"
 };
 
-const localization: Record<string, RoutesLocalizationStrings> = {en, rs};
+const localization: Localized<RoutesLocalizationStrings> = {en, rs};
 
 export default localization;

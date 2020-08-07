@@ -23,7 +23,7 @@ export const AboutPage = () => {
 				<div className="col s12 m12 l4"><img src={teamwork} alt="Team"/></div>
 				<div className="col s12 m12 l4 text">
 					<ul className="browser-default">
-						{localization[locale].smallTeamsText.map(str => <li>{str}</li>)}
+						{(localization[locale].smallTeamsText as string[]).map(str => <li>{str}</li>)}
 					</ul>
 				</div>
 			</div>
@@ -33,7 +33,7 @@ export const AboutPage = () => {
 				<div className="col s12 m12 l4"><img src={team} alt="Team"/></div>
 				<div className="col s12 m12 l4 text">
 					<ul className="browser-default">
-						{localization[locale].clientAsPartnerText.map(str => <li>{str}</li>)}
+						{(localization[locale].clientAsPartnerText as string[]).map(str => <li>{str}</li>)}
 					</ul>
 				</div>
 			</div>

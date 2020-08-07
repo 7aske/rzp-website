@@ -50,6 +50,6 @@ const en: AboutPageLocalizationStrings = {
 	]
 };
 
-const localization: Record<string, AboutPageLocalizationStrings> = {en, rs};
+const localization: Localized<AboutPageLocalizationStrings> = {en, rs};
 
 export default localization;

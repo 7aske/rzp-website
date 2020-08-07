@@ -29,6 +29,6 @@ const en: ContactFormLocalizationStrings = {
 	submit: "Submit"
 };
 
-const localization: Record<string, ContactFormLocalizationStrings> = {en, rs};
+const localization: Localized<ContactFormLocalizationStrings> = {en, rs};
 
 export default localization;

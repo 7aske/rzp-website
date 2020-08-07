@@ -15,7 +15,8 @@ input::placeholder {
 input {
 	&[type="submit"] {
 		background-color: $theme-green;
-		&:hover{
+
+		&:hover {
 			background-color: $theme-green-lightest;
 			color: $theme-grey;
 		}
@@ -26,4 +27,39 @@ input {
 
 textarea {
 	color: $theme-white;
+}
+
+.card {
+	background-color: $theme-grey !important;
+
+	.card-image {
+		text-align: center;
+	}
+
+	.card-content {
+		color: $theme-white;
+	}
+}
+
+.modal {
+	background-color: $theme-grey !important;
+	color: $theme-white;
+
+	&, .modal-content {
+		width: 80vw !important;
+	}
+;
+
+	.modal-footer, .modal-content {
+		background-color: $theme-grey !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.modal {
+		&, .modal-content {
+			height: 80vh !important;
+		}
+	}
 }

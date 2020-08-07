@@ -1,0 +1,57 @@
+.member-card .card-image {
+  padding: 7em 7em 3em 7em;
+}
+.member-card .card-content h5 {
+  font-size: 2em;
+  color: #4ecca3 !important;
+  text-align: center;
+  width: 100%;
+}
+.member-card .card-content h6 {
+  color: #eeeeee !important;
+  text-align: center;
+  width: 100%;
+}
+.member-card .more {
+  color: #4ecca3 !important;
+}
+.member-card .more:hover {
+  background-color: #4ecca3 !important;
+  color: #eeeeee !important;
+}
+.member-card .col {
+  padding: 1em !important;
+}
+
+.modal .modal-content {
+  width: 100%;
+}
+.modal .modal-content h4 {
+  color: #4ecca3 !important;
+}
+.modal .modal-content img {
+  width: 100%;
+}
+.modal .modal-close {
+  color: #4ecca3;
+}
+.modal .modal-close:hover {
+  background-color: #4ecca3 !important;
+  color: #eeeeee;
+}
+.modal .modal-footer {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 900px) {
+  .member-card .card-image {
+    padding: 3em 3em 1em 3em;
+  }
+
+  .member-modal .modal-content {
+    height: 90% !important;
+  }
+  .member-modal .modal-content h4 {
+    text-align: center;
+  }
+}

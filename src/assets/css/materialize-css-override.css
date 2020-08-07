@@ -24,3 +24,30 @@ input[type=submit]:hover {
 textarea {
   color: #eeeeee;
 }
+
+.card {
+  background-color: #393e46 !important;
+}
+.card .card-image {
+  text-align: center;
+}
+.card .card-content {
+  color: #eeeeee;
+}
+
+.modal {
+  background-color: #393e46 !important;
+  color: #eeeeee;
+}
+.modal, .modal .modal-content {
+  width: 80vw !important;
+}
+.modal .modal-footer, .modal .modal-content {
+  background-color: #393e46 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .modal, .modal .modal-content {
+    height: 80vh !important;
+  }
+}

@@ -24,6 +24,6 @@ const en: FooterLocalizationStrings = {
 
 };
 
-const localization: Record<string, FooterLocalizationStrings> = {en, rs};
+const localization: Localized<FooterLocalizationStrings> = {en, rs};
 
 export default localization;

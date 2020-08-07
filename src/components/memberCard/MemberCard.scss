@@ -1,0 +1,80 @@
+@import "../../assets/css/theme";
+
+.member-card {
+	.card-image {
+		padding: 7em 7em 3em 7em;
+	}
+
+	.card-content {
+
+		h5 {
+			font-size: 2em;
+			color: $theme-green !important;
+			text-align: center;
+			width: 100%;
+		}
+
+		h6 {
+			color: $theme-white !important;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.more {
+		color: $theme-green !important;
+
+		&:hover {
+			background-color: $theme-green !important;
+			color: $theme-white !important;
+		}
+	}
+
+	.col {
+		padding: 1em !important;
+	}
+}
+
+.modal {
+	.modal-content {
+		width: 100%;
+
+		h4 {
+			color: $theme-green !important;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.modal-close {
+		color: $theme-green;
+
+		&:hover {
+			background-color: $theme-green !important;
+			color: $theme-white;
+		}
+	}
+
+	.modal-footer {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.member-card {
+		.card-image {
+			padding: 3em 3em 1em 3em;
+		}
+	}
+	.member-modal {
+		.modal-content {
+			height: 90% !important;
+			h4 {
+				text-align: center;
+			}
+		}
+
+	}
+}

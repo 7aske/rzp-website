@@ -17,9 +17,6 @@
 #about-page > .row {
   padding-top: 2em;
 }
-#about-page > .row .col {
-  max-height: 40vh;
-}
 #about-page > .row .col.text {
   padding-top: 4em;
 }

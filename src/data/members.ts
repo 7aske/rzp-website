@@ -8,11 +8,11 @@ export const members: Member[] = [
 		picture: profile,
 		role: {
 			en: "Developer",
-			rs: "Developer",
+			sr: "Developer",
 		},
 		about: {
 			en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
-			rs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
+			sr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
 		},
 		socialMedia: [
 			{
@@ -40,11 +40,11 @@ export const members: Member[] = [
 		picture: profile,
 		role: {
 			en: "Developer",
-			rs: "Developer",
+			sr: "Developer",
 		},
 		about: {
 			en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
-			rs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
+			sr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
 		},
 		socialMedia: [],
 	},
@@ -55,11 +55,11 @@ export const members: Member[] = [
 		picture: profile,
 		role: {
 			en: "Designer",
-			rs: "Dizajner",
+			sr: "Dizajner",
 		},
 		about: {
 			en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
-			rs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
+			sr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
 		},
 		socialMedia: [],
 	},
@@ -70,11 +70,11 @@ export const members: Member[] = [
 		picture: profile,
 		role: {
 			en: "Developer",
-			rs: "Developer",
+			sr: "Developer",
 		},
 		about: {
 			en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
-			rs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
+			sr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis felis dolor, sed consequat justo volutpat eu. Aliquam erat volutpat. Nullam vel lectus ac sapien luctus tempus. Nulla tellus mi, efficitur ut nunc vel, sollicitudin ullamcorper lacus. Praesent dui odio, pharetra vitae risus sit amet, sagittis egestas mauris. Morbi volutpat, nulla eget malesuada feugiat, urna enim gravida diam, sit amet auctor sapien nulla ut magna. Sed gravida diam ac eros rutrum tincidunt. Maecenas consequat mollis lorem a pharetra. Vivamus dignissim lectus magna, in eleifend magna dictum a. Praesent lorem turpis, pulvinar vitae sapien sit amet, iaculis scelerisque nisi.",
 		},
 		socialMedia: [],
 	},

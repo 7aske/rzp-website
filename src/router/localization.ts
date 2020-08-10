@@ -7,7 +7,7 @@ type RoutesLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: RoutesLocalizationStrings = {
+const sr: RoutesLocalizationStrings = {
 	about: "O Nama",
 	blog: "Blog",
 	contact: "Kontakt",
@@ -23,6 +23,6 @@ const en: RoutesLocalizationStrings = {
 	team: "Team"
 };
 
-const localization: Localized<RoutesLocalizationStrings> = {en, rs};
+const localization: Localized<RoutesLocalizationStrings> = {en, sr};
 
 export default localization;

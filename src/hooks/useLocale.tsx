@@ -1,13 +1,13 @@
 import { useCookies } from "react-cookie";
 
 const defaultLocale = "en";
-export const locales = ["en", "rs"];
+export const locales = ["en", "sr"];
 
 
 const useLocale = () => {
 	const [cookies, setCookie] = useCookies(["locale"]);
 
-	if (!cookies.locale) {
+	if (!cookies.locale || locales.indexOf(cookies.locale) === -1) {
 		setCookie("locale", defaultLocale);
 	}
 

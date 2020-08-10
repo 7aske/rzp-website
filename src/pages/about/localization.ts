@@ -12,7 +12,7 @@ type AboutPageLocalizationStrings = {
 	[key: string]: string | string[];
 }
 
-const rs: AboutPageLocalizationStrings = {
+const sr: AboutPageLocalizationStrings = {
 	clientAsPartner: "Klijent kao partner",
 	clientAsPartnerText: [
 		"Klijenti učestvuju u timu i razvoju da bi najefikasnije došli do željenih rezultata.",
@@ -50,6 +50,6 @@ const en: AboutPageLocalizationStrings = {
 	]
 };
 
-const localization: Localized<AboutPageLocalizationStrings> = {en, rs};
+const localization: Localized<AboutPageLocalizationStrings> = {en, sr};
 
 export default localization;

@@ -7,7 +7,7 @@ type FooterLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: FooterLocalizationStrings = {
+const sr: FooterLocalizationStrings = {
 	company: "Kompanija",
 	copyright: "© 2020 Kompanija. Sva prava zadržana.",
 	resources: "Resursi",
@@ -24,6 +24,6 @@ const en: FooterLocalizationStrings = {
 
 };
 
-const localization: Localized<FooterLocalizationStrings> = {en, rs};
+const localization: Localized<FooterLocalizationStrings> = {en, sr};
 
 export default localization;

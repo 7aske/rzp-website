@@ -9,7 +9,7 @@ type ContactFormLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: ContactFormLocalizationStrings = {
+const sr: ContactFormLocalizationStrings = {
 	emailLabel: "Email",
 	emailPlaceholder: "ivana.ivanovic@example.rs",
 	messageLabel: "Poruka",
@@ -29,6 +29,6 @@ const en: ContactFormLocalizationStrings = {
 	submit: "Submit"
 };
 
-const localization: Localized<ContactFormLocalizationStrings> = {en, rs};
+const localization: Localized<ContactFormLocalizationStrings> = {en, sr};
 
 export default localization;

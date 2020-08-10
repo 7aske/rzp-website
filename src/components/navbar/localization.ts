@@ -2,12 +2,12 @@ type NavbarLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: NavbarLocalizationStrings = {
+const sr: NavbarLocalizationStrings = {
 };
 
 const en: NavbarLocalizationStrings = {
 };
 
-const localization: Record<string, NavbarLocalizationStrings> = {en, rs};
+const localization: Record<string, NavbarLocalizationStrings> = {en, sr};
 
 export default localization;

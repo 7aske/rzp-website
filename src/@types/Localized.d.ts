@@ -1,5 +1,5 @@
 declare interface Localized<T> {
 	en: T;
-	rs: T;
+	sr: T;
 	[key:string]: T;
 }

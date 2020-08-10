@@ -4,7 +4,7 @@ type ContactPageLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: ContactPageLocalizationStrings = {
+const sr: ContactPageLocalizationStrings = {
 	title: "Kontaktirajte nas",
 	text: "RS - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur distinctio ducimus error eveniet facilis, fuga impedit iste maxime minus perspiciatis quam quas saepe tenetur ullam vitae, voluptas voluptate. Libero.",
 };
@@ -14,6 +14,6 @@ const en: ContactPageLocalizationStrings = {
 	text: "EN - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur distinctio ducimus error eveniet facilis, fuga impedit iste maxime minus perspiciatis quam quas saepe tenetur ullam vitae, voluptas voluptate. Libero.",
 };
 
-const localization: Localized<ContactPageLocalizationStrings> = {en, rs};
+const localization: Localized<ContactPageLocalizationStrings> = {en, sr};
 
 export default localization;

@@ -5,7 +5,7 @@ type MemberCardLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: MemberCardLocalizationStrings = {
+const sr: MemberCardLocalizationStrings = {
 	socialMedia: "Društvene mreže",
 	more: "Više",
 	close: "Zatvori",
@@ -17,6 +17,6 @@ const en: MemberCardLocalizationStrings = {
 	close: "Close",
 };
 
-const localization: Localized<MemberCardLocalizationStrings> = {en, rs};
+const localization: Localized<MemberCardLocalizationStrings> = {en, sr};
 
 export default localization;

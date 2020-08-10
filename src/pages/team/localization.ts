@@ -3,7 +3,7 @@ type TeamPageLocalizationStrings = {
 	[key: string]: string;
 }
 
-const rs: TeamPageLocalizationStrings = {
+const sr: TeamPageLocalizationStrings = {
 	title:"Naš tim"
 };
 
@@ -11,6 +11,6 @@ const en: TeamPageLocalizationStrings = {
 	title:"Our team"
 };
 
-const localization: Localized<TeamPageLocalizationStrings> = {en, rs};
+const localization: Localized<TeamPageLocalizationStrings> = {en, sr};
 
 export default localization;

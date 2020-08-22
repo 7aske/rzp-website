@@ -4,14 +4,14 @@ import { BlogPostItem, BlogPostPlaceholder } from "./BlogPostItem";
 
 type BlogPostListProps = {
 	title: string;
-	service: () => Promise<Post[]>
+	service: (params:any) => Promise<Post[]>
 };
 export const BlogPostList = ({title, service}: BlogPostListProps) => {
 	const [posts, setPosts] = useState<Post[]>([]);
-
+	const postCount = 5
 	const getPosts = () => {
-		setPosts(new Array(5).fill(null))
-		service().then(newPosts => {
+		setPosts(new Array(postCount).fill(null))
+		service({count: postCount}).then(newPosts => {
 			setPosts(newPosts);
 		}).catch(err => {
 			console.error(err);

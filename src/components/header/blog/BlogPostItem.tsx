@@ -1,12 +1,13 @@
 import * as React from "react";
 import "./BlogPostItem.css";
+import { blogUrl } from "../../../globals";
 
 type BlogPostItemProps = {
 	post: Post
 };
 export const BlogPostItem = ({post}: BlogPostItemProps) => {
 	return (
-		<li className="collection-item"><a target="blank" href={post.url}>{post.title}</a></li>
+		<li className="collection-item"><a target="blank" href={blogUrl + "/#/posts/" + post.postSlug}>{post.postTitle}</a></li>
 	);
 };
 

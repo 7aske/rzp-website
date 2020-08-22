@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^4.1.0",
+    "axios": "^0.19.2",
     "materialize-css": "^1.0.0",
     "react": "^16.13.1",
     "react-cookie": "^4.0.3",
@@ -14,10 +15,11 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy-dev": "rsync -have ssh build/ root@viking:/srv/http/rzp/website/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +40,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/axios": "^0.14.0",
     "@types/jest": "^24.0.0",
     "@types/materialize-css": "^1.0.8",
     "@types/node": "^12.0.0",

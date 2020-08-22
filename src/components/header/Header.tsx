@@ -3,7 +3,7 @@ import "./Header.css";
 import useLocale from "../../hooks/useLocale";
 import localization from "./localization";
 import { BlogPostList } from "./blog/BlogPostList";
-import * as blogService from "../../services/blog";
+import * as blogService from "../../services/blogService";
 
 type HeaderProps = {};
 export const Header = (props: HeaderProps) => {

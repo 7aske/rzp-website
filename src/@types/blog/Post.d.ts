@@ -1,4 +1,4 @@
 type Post = {
-	title: string;
-	url: string;
+	postTitle: string;
+	postSlug: string;
 }

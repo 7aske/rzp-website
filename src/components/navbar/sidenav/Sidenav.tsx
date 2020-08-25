@@ -15,7 +15,7 @@ export const Sidenav = (props: SidenavProps) => {
 
 	useEffect(() => {
 		if (sidenavRef.current)
-			sidenavInstance.current = M.Sidenav.init(sidenavRef.current, {draggable: true, edge: "right"});
+			sidenavInstance.current = M.Sidenav.init(sidenavRef.current, {draggable: false, edge: "right"});
 	}, [sidenavRef]);
 
 	return (

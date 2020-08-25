@@ -1,8 +1,38 @@
 @import "../../assets/css/theme";
 
 .member-card {
+	.card-content {
+		min-height: 10em;
+	}
+	.card-action {
+		padding-top: 1em;
+		border-top: 1px solid $theme-green;
+	}
 	.card-image {
-		padding: 7em 7em 3em 7em;
+		cursor: pointer;
+		img {
+
+			transition: all 500ms;
+			width: 100%;
+			border-radius: 50%;
+			box-sizing: border-box;
+			border: 5px solid $theme-grey;
+		}
+	}
+
+	.role {
+		padding-top: .25em;
+		padding-bottom: .25em;
+	}
+
+	&:hover {
+		.card-image img {
+			border: 5px solid $theme-green-light;
+		}
+
+		.card-action {
+			border-top: 1px solid $theme-green-light;
+		}
 	}
 
 	.card-content {
@@ -72,14 +102,18 @@
 	}
 
 	.social-media {
-		text-align: right;
+		border-top: 1px solid $theme-green-light;
+		text-align: left;
 	}
 }
 
 @media screen and (max-width: 900px) {
+	.title {
+		margin-bottom: 0;
+	}
 	.member-card {
 		.card-image {
-			padding: 3em 3em 1em 3em;
+			padding: 1em 3em 1em 3em;
 		}
 
 

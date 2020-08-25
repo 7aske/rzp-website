@@ -1,12 +1,10 @@
 #team-page {
   min-height: 60vh;
+  z-index: 100;
 }
 #team-page .title {
   text-align: center;
   color: #4ecca3;
-}
-#team-page > .row > .col {
-  padding: 2em 4em;
 }
 
 @media screen and (max-width: 900px) {

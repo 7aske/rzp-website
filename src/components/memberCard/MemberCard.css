@@ -1,5 +1,29 @@
+.member-card .card-content {
+  min-height: 10em;
+}
+.member-card .card-action {
+  padding-top: 1em;
+  border-top: 1px solid #4ecca3;
+}
 .member-card .card-image {
-  padding: 7em 7em 3em 7em;
+  cursor: pointer;
+}
+.member-card .card-image img {
+  transition: all 500ms;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #393e46;
+}
+.member-card .role {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+.member-card:hover .card-image img {
+  border: 5px solid #88dcc1;
+}
+.member-card:hover .card-action {
+  border-top: 1px solid #88dcc1;
 }
 .member-card .card-content h5 {
   font-size: 2em;
@@ -52,12 +76,17 @@
   border-color: #232931;
 }
 .modal .social-media {
-  text-align: right;
+  border-top: 1px solid #88dcc1;
+  text-align: left;
 }
 
 @media screen and (max-width: 900px) {
+  .title {
+    margin-bottom: 0;
+  }
+
   .member-card .card-image {
-    padding: 3em 3em 1em 3em;
+    padding: 1em 3em 1em 3em;
   }
 
   .member-modal .modal-content {

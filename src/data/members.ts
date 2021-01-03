@@ -1,4 +1,6 @@
 import profile from "../assets/img/team/profile.png";
+import bandzi from "../assets/img/team/bandzi.jpeg";
+import dimitrije from "../assets/img/team/dimitrije.jpeg";
 
 export const members: Member[] = [
 	{
@@ -37,7 +39,7 @@ export const members: Member[] = [
 		firstName: "Nikola",
 		lastName: "Cvetković",
 		email: "test@example.com",
-		picture: "https://media-exp1.licdn.com/dms/image/C5603AQHTFFIntRIMtQ/profile-displayphoto-shrink_800_800/0?e=1603929600&v=beta&t=dueZzbUUch2xjLs1Q6B4rHe-3QlRgEOuyH9tr5ijiZI",
+		picture: bandzi,
 		role: {
 			en: "Team leader",
 		sr: "Vođa tima",
@@ -67,7 +69,7 @@ export const members: Member[] = [
 		firstName: "Dimitrije",
 		lastName: "Stojković",
 		email: "test@example.com",
-		picture: "https://media-exp1.licdn.com/dms/image/C4D03AQHZkwlIED0o0Q/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=1Bq0Ps-DYpiVZBrEQ-tO8KPNHP5F8wOBAdHjiv9dbog",
+		picture: dimitrije,
 		role: {
 			en: "Designer",
 			sr: "Dizajner",

@@ -1,0 +1,26 @@
+@import "src/assets/css/index";
+#work {
+	.thumbs {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		.thumb:hover {
+			cursor: pointer;
+			@include border-color($theme-primary)
+		}
+		.thumb {
+			@include border-color($theme-grey)
+		}
+		.thumb.selected {
+			@include border-color($theme-primary)
+		}
+	}
+	.slide {
+		div {
+			&, & img {
+				height: 100% !important;
+				width: auto;
+			}
+		}
+	}
+}

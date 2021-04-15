@@ -10,6 +10,7 @@
     "react-cookie": "^4.0.3",
     "react-dom": "^16.13.1",
     "react-materialize": "^3.9.8",
+    "react-responsive-carousel": "^3.2.18",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",

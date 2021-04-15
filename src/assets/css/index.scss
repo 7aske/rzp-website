@@ -37,3 +37,65 @@ code {
 	background-color: $theme-primary-light;
 	color: $theme-dark;
 }
+
+@mixin color($color-value) {
+	color: $color-value
+}
+
+@mixin bg-color($color-value) {
+	background-color: $color-value;
+}
+
+@mixin border-color($color-value) {
+	border-color: $color-value;
+}
+
+.theme-primary-text {
+	@include color($theme-primary);
+}
+
+.theme-primary-border {
+	@include border-color($theme-primary);
+}
+
+.theme-primary {
+	@include bg-color($theme-primary);
+}
+
+.theme-black-text {
+	@include color($theme-black);
+}
+
+.theme-black-border {
+	@include border-color($theme-black);
+}
+
+.theme-black {
+	@include bg-color($theme-black);
+}
+
+
+.theme-dark-text {
+	@include color($theme-dark);
+}
+
+.theme-dark-border {
+	@include border-color($theme-dark);
+}
+
+.theme-dark {
+	@include bg-color($theme-dark);
+}
+
+.theme-grey-text {
+	@include color($theme-grey);
+}
+
+.theme-grey-border {
+	@include border-color($theme-grey);
+}
+
+.theme-grey {
+	@include bg-color($theme-grey);
+}
+

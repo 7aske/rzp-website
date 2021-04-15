@@ -9,51 +9,53 @@ import useLocale from "../../hooks/useLocale";
 import { scrollToTop } from "../../utils/utils";
 import "./AboutPage.scss";
 import localization from "./localization";
+import { Container, Row, Col } from "react-materialize";
 
 export const AboutPage = () => {
 	useEffect(scrollToTop, []);
 	const [locale] = useLocale();
 
 	return (
-		<div id="about" className="container animate__animated animate__fadeIn animate__slow">
-			<h2 className="how-we-work-title">{localization[locale].howWeWorkTitle}</h2>
-			<p className="how-we-work-text">{localization[locale].howWeWorkText}</p>
-			<div className="row animate__animated animate__slideInRight animate__fast">
-				<div className="col s12 m12 l4 text"><h4>{localization[locale].smallTeams}</h4></div>
-				<div className="col s12 m12 l4"><img src={teamwork} alt="Team"/></div>
-				<div className="col s12 m12 l4 text">
-					<ul className="browser-default">
-						{(localization[locale].smallTeamsText as string[]).map(str => <li>{str}</li>)}
-					</ul>
-				</div>
-			</div>
+		<section id="about" className="animate__animated animate__fadeIn animate__slow">
+			<Container>
+				<h2 className="how-we-work-title">{localization[locale].howWeWorkTitle}</h2>
+				<p className="how-we-work-text">{localization[locale].howWeWorkText}</p>
+				<Row className="animate__animated animate__slideInRight animate__fast">
+					<Col s={12} m={12} l={4} className="text"><h4>{localization[locale].smallTeams}</h4></Col>
+					<Col s={12} m={12} l={4}><img src={teamwork} alt="Team"/></Col>
+					<Col s={12} m={12} l={4} className="text">
+						<ul className="browser-default">
+							{(localization[locale].smallTeamsText as string[]).map(str => <li>{str}</li>)}
+						</ul>
+					</Col>
+				</Row>
 
-			<div className="row animate__animated animate__slideInLeft animate__fast">
-				<div className="col s12 m12 l4 text"><h4>{localization[locale].clientAsPartner}</h4></div>
-				<div className="col s12 m12 l4"><img src={team} alt="Team"/></div>
-				<div className="col s12 m12 l4 text">
-					<ul className="browser-default">
-						{(localization[locale].clientAsPartnerText as string[]).map(str => <li>{str}</li>)}
-					</ul>
-				</div>
-			</div>
+				<Row className="how-we-work animate__animated animate__slideInLeft animate__fast">
+					<Col s={12} m={12} l={4} className="text"><h4>{localization[locale].clientAsPartner}</h4></Col>
+					<Col s={12} m={12} l={4}><img src={team} alt="Team"/></Col>
+					<Col s={12} m={12} l={4} className="text">
+						<ul className="browser-default">
+							{(localization[locale].clientAsPartnerText as string[]).map(str => <li>{str}</li>)}
+						</ul>
+					</Col>
+				</Row>
 
-			<div className="row process">
-				<div className="col s12 m12 l4">
-					<h4>{localization[locale].learn}</h4>
-					<img src={learn} alt="Learn"/>
-				</div>
+				<Row className="process">
+					<Col s={12} m={12} l={4}>
+						<h4>{localization[locale].learn}</h4>
+						<img src={learn} alt="Learn"/>
+					</Col>
 
-				<div className="col s12 m12 l4">
-					<h4>{localization[locale].iterate}</h4>
-					<img src={iterate} alt="Learn"/>
-				</div>
-				<div className="col s12 m12 l4">
-					<h4>{localization[locale].success}</h4>
-					<img src={success} alt="Learn"/>
-				</div>
-			</div>
-
-		</div>
+					<Col s={12} m={12} l={4}>
+						<h4>{localization[locale].iterate}</h4>
+						<img src={iterate} alt="Learn"/>
+					</Col>
+					<Col s={12} m={12} l={4}>
+						<h4>{localization[locale].success}</h4>
+						<img src={success} alt="Learn"/>
+					</Col>
+				</Row>
+			</Container>
+		</section>
 	);
 };

@@ -4,28 +4,30 @@ import "../../assets/img/logo.png";
 import { Sidenav } from "./sidenav/Sidenav";
 import "./Navbar.scss";
 import logo from "../../assets/img/logo.png";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import useLocale from "../../hooks/useLocale";
 import { LocaleSwitch } from "../localization/LocaleSwitch";
 import routes from "../../router/localization";
 import { blogUrl } from "../../globals";
 import Scrollspy from "react-scrollspy";
+import {scrollTo} from "../../utils/utils";
 
 
 export const Navbar = () => {
 	const [locale] = useLocale();
+	const location = useLocation();
 
 	const navRef = createRef<HTMLElement>();
 
 	const menuItems = [
-		<li key={0}><a className="sidenav-close" href="#header">{routes[locale].home}</a></li>,
-		<li key={1}><a className="sidenav-close" href="#about">{routes[locale].about}</a></li>,
-		<li key={2}><a className="sidenav-close" href="#team">{routes[locale].team}</a></li>,
-		<li key={3}><a className="sidenav-close" href="#contact">{routes[locale].contact}</a></li>,
+		<li key={0}><a className="sidenav-close" onClick={scrollTo} href="#header">{routes[locale].home}</a></li>,
+		<li key={1}><a className="sidenav-close" onClick={scrollTo} href="#about">{routes[locale].about}</a></li>,
+		<li key={2}><a className="sidenav-close" onClick={scrollTo} href="#team">{routes[locale].team}</a></li>,
+		<li key={3}><a className="sidenav-close" onClick={scrollTo} href="#contact">{routes[locale].contact}</a></li>,
 		<li key={4}><a target="blank" className="sidenav-close" href={blogUrl}>{routes[locale].blog}</a></li>,
 		<li key={5}><LocaleSwitch/></li>,
 	];
-	const scrollSpyItems = ["header", "about", "section-3"]
+	const scrollSpyItems = ["header", "about", "team", "contact"];
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {

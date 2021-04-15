@@ -13,11 +13,11 @@ export const TeamPage = () => {
 	useEffect(scrollToTop, []);
 
 	return (
-		<div id="team-page" className="container">
+		<section id="team" className="container">
 			<h2 className="title">{localization[locale].title}</h2>
 			<div className="row">
 				{members.sort(() => Math.random() - 0.5).map((member,i) => <MemberCard key={i} member={member}/>)}
 			</div>
-		</div>
+		</section>
 	);
 };

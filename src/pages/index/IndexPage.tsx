@@ -13,7 +13,7 @@ export const IndexPage = () => {
 		<div id="index-page" className="animate__animated animate__fadeIn animate__slow">
 			<Header/>
 			<AboutPage/>
-			<TeamPage/>
+			{/*<TeamPage/>*/}
 			<ContactPage/>
 		</div>
 	);

@@ -20,6 +20,23 @@
 		font-size: 1.5em;
 	}
 
+	.how-we-work {
+		margin-bottom: 10em;
+	}
+
+	.process {
+		margin-bottom: 10em;
+		.col {
+			h4 {
+				color: $theme-primary;
+			}
+			text-align: center;
+		}
+		img {
+			width: 90% !important;
+		}
+	}
+
 	& > .row {
 		padding-top: 2em;
 
@@ -44,18 +61,6 @@
 
 				padding-top: 4em;
 			}
-		}
-	}
-
-	.process {
-		.col {
-			h4 {
-				color: $theme-primary;
-			}
-			text-align: center;
-		}
-		img {
-			width: 90% !important;
 		}
 	}
 }

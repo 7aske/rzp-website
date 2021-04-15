@@ -1,6 +1,6 @@
 @import "../../assets/css/theme";
 
-#team-page {
+#team {
 	min-height: 60vh;
 	z-index: 100;
 	.title {
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 900px) {
-	#team-page {
+	#team {
 		& > .row > .col {
 			padding: 1em;
 		}

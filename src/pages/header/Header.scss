@@ -1,8 +1,9 @@
 @import "../../assets/css/theme";
+@import "../../components/navbar/Navbar";
 
 #header {
-
-	padding-top: 8em;
+	min-height: calc(70vh - #{$navbar-height});
+	padding-top: $navbar-height;
 	color: $theme-white;
 
 	.title {

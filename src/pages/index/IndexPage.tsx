@@ -1,7 +1,10 @@
 import * as React from "react";
 import { useEffect } from "react";
-import { Header } from "../../components/header/Header";
+import { Header } from "../header/Header";
 import { scrollToTop } from "../../utils/utils";
+import { ContactPage } from "../contact/ContactPage";
+import { TeamPage } from "../team/TeamPage";
+import { AboutPage } from "../about/AboutPage";
 
 export const IndexPage = () => {
 	useEffect(scrollToTop, []);
@@ -9,6 +12,9 @@ export const IndexPage = () => {
 	return (
 		<div id="index-page" className="animate__animated animate__fadeIn animate__slow">
 			<Header/>
+			<AboutPage/>
+			<TeamPage/>
+			<ContactPage/>
 		</div>
 	);
 };

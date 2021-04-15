@@ -1,6 +1,6 @@
 @import "../../assets/css/theme";
 
-#about-page {
+#about {
 	min-height: 60vh;
 	color: $theme-white;
 
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 900px) {
-	#about-page {
+	#about {
 		.row {
 			.col {
 				&.text {

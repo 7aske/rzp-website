@@ -15,7 +15,7 @@ export const AboutPage = () => {
 	const [locale] = useLocale();
 
 	return (
-		<div id="about-page" className="container animate__animated animate__fadeIn animate__slow">
+		<div id="about" className="container animate__animated animate__fadeIn animate__slow">
 			<h2 className="how-we-work-title">{localization[locale].howWeWorkTitle}</h2>
 			<p className="how-we-work-text">{localization[locale].howWeWorkText}</p>
 			<div className="row animate__animated animate__slideInRight animate__fast">

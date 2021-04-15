@@ -1,5 +1,7 @@
 @import "../../assets/css/theme";
 
+$navbar-height: 7em;
+
 nav#nav {
 	&.fixed {
 		position: fixed;
@@ -12,6 +14,16 @@ nav#nav {
 		display: none !important;
 	}
 
+	&.fixed {
+		.current {
+			background-color: $theme-primary-light;
+			a {
+				color: $theme-black;
+			}
+
+		}
+	}
+
 	position: absolute;
 	top: 0;
 	transition: all 500ms;
@@ -19,7 +31,7 @@ nav#nav {
 	margin-right: 0;
 	z-index: 1000;
 	background-color: $theme-black;
-	height: 7em;
+	height: $navbar-height;
 
 	.nav-logo, .nav-logo img {
 		height: 100%;
@@ -33,6 +45,12 @@ nav#nav {
 	.menu {
 		display: block;
 		height: 4em;
+	}
+
+	ul.menu li {
+		height: 100%;
+		width: 6em;
+		text-align: center;
 	}
 
 	ul.menu li a {

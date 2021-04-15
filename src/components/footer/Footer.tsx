@@ -29,23 +29,19 @@ export const Footer = () => {
 						<h5>{localization[locale].company}</h5>
 						<p>{localization[locale].text}</p>
 					</div>
-
 					<div className="col l4 offset-l2 s12 resources">
 						<h5 className="white-text">{localization[locale].resources}</h5>
 						<ul>
 							{menuItems}
 						</ul>
 					</div>
-
 				</div>
 			</div>
-
 			<div className="footer-copyright">
 				<div className="container">
 					{localization[locale].copyright}
 				</div>
 			</div>
-
 		</footer>
 	);
 };

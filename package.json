@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy:prod": "npm run build",
+    "predeploy:dev": "npm run build",
     "deploy:prod": "rsync --delete --progress -havz build/ root@7aske.com:/srv/http/rzp/website/",
     "deploy:dev": "rsync --delete --progress -havz build/ root@viking.lan:/srv/http/rzp/website/"
   },

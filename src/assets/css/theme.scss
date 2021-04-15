@@ -1,4 +1,6 @@
-$theme-black: #232931;
+$theme-dark: #232931;
+$theme-black: darken($theme-dark, 20);
+$theme-black-alpha: rgba(darken($theme-dark, 5), .7);
 $theme-grey: #393e46;
 $theme-primary: #4ecca3;
 $theme-primary-light: #88dcc1;

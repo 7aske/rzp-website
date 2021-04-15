@@ -13,7 +13,8 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-scrollspy": "^3.4.3"
+    "react-scrollspy": "^3.4.3",
+    "react-typist": "^2.0.5"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
@@ -52,6 +53,7 @@
     "@types/react-router": "^5.1.8",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-scrollspy": "^3.3.3",
+    "@types/react-typist": "^2.0.1",
     "node-sass": "^4.14.1",
     "typescript": "^4.2.4"
   }

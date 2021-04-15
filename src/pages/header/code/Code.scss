@@ -1,0 +1,10 @@
+@import "src/assets/css/theme";
+
+#code {
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+	padding-top: 5em;
+	font-family: monospace;
+	color: $theme-black;
+}

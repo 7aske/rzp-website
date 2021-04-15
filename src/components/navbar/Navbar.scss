@@ -18,7 +18,7 @@ nav#nav {
 		.current {
 			background-color: $theme-primary-light;
 			a {
-				color: $theme-black;
+				color: $theme-dark;
 			}
 
 		}
@@ -30,7 +30,7 @@ nav#nav {
 	margin-left: 0;
 	margin-right: 0;
 	z-index: 1000;
-	background-color: $theme-black;
+	background-color: $theme-dark;
 	height: $navbar-height;
 
 	.nav-logo, .nav-logo img {
@@ -56,7 +56,7 @@ nav#nav {
 	ul.menu li a {
 		&:hover {
 			color: $theme-primary;
-			background-color: $theme-black;
+			background-color: $theme-dark;
 			border-bottom: 2px solid $theme-primary;
 			height: 4em;
 		}

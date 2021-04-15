@@ -7,7 +7,7 @@ body {
 	sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: $theme-black;
+	background-color: $theme-dark;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -35,5 +35,5 @@ code {
 
 ::selection{
 	background-color: $theme-primary-light;
-	color: $theme-black;
+	color: $theme-dark;
 }

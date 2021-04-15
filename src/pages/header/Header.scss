@@ -2,9 +2,17 @@
 @import "../../components/navbar/Navbar";
 
 #header {
+	margin-top: 5em;
 	min-height: calc(70vh - #{$navbar-height});
-	padding-top: $navbar-height;
 	color: $theme-white;
+	position: relative;
+
+	.content {
+		padding-top: $navbar-height;
+		padding-bottom: $navbar-height;
+		background-color: $theme-black-alpha;
+		min-height: calc(70vh - #{$navbar-height});
+	}
 
 	.title {
 		color: $theme-primary;
@@ -12,14 +20,13 @@
 	}
 
 	.text {
-
 		font-size: 20px;
 		font-weight: 100;
 	}
 
 	.collection {
 		&, & li {
-			background-color: $theme-black;
+			background-color: inherit;
 		}
 
 		.collection-header {
@@ -30,6 +37,7 @@
 		}
 
 		.collection-item {
+			background-color: inherit;
 			padding: {
 				top: 1.5em;
 				bottom: 1.5em;
@@ -57,6 +65,7 @@
 
 @media screen and (max-width: 900px) {
 	#header {
+		margin-top: 2em;
 		.title {
 			font-size: 36px;
 		}

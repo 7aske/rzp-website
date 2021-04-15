@@ -1,6 +1,6 @@
 import * as React from "react";
 import { createRef, useEffect } from "react";
-import "./SocialMediaIcon.css";
+import "./SocialMediaIcon.scss";
 
 type SocialMediaIconProps = {
 	socialMedia: SocialMedia;

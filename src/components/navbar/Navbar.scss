@@ -37,9 +37,9 @@ nav#nav {
 
 	ul.menu li a {
 		&:hover {
-			color: $theme-green;
+			color: $theme-primary;
 			background-color: $theme-black;
-			border-bottom: 2px solid $theme-green;
+			border-bottom: 2px solid $theme-primary;
 			height: 4em;
 		}
 	}

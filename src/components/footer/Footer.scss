@@ -10,7 +10,7 @@ footer#footer {
 
 	& .to-top {
 		a {
-			color: $theme-green !important;
+			color: $theme-primary !important;
 
 			&:hover {
 				color: $theme-white !important;
@@ -27,7 +27,7 @@ footer#footer {
 
 	ul li {
 		&, & a {
-			color: $theme-green;
+			color: $theme-primary;
 
 			&:hover {
 				text-decoration: underline;

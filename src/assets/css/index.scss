@@ -9,6 +9,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: $theme-black;
 	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 main {
@@ -29,10 +30,10 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: $theme-green;
+	background-color: $theme-primary;
 }
 
 ::selection{
-	background-color: $theme-green-light;
+	background-color: $theme-primary-light;
 	color: $theme-black;
 }

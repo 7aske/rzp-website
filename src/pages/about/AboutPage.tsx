@@ -7,7 +7,7 @@ import team from "../../assets/img/about/team.svg";
 import teamwork from "../../assets/img/about/teamwork.svg";
 import useLocale from "../../hooks/useLocale";
 import { scrollToTop } from "../../utils/utils";
-import "./AboutPage.css";
+import "./AboutPage.scss";
 import localization from "./localization";
 
 export const AboutPage = () => {

@@ -1,6 +1,8 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import { BlogPostItem, BlogPostPlaceholder } from "./BlogPostItem";
+import localization from "./localization"
+import useLocale from "../../../hooks/useLocale";
 
 type BlogPostListProps = {
 	title: string;
@@ -8,6 +10,7 @@ type BlogPostListProps = {
 };
 export const BlogPostList = ({title, service}: BlogPostListProps) => {
 	const [posts, setPosts] = useState<Post[]>([]);
+	const [locale] = useLocale();
 	const postCount = 5
 	const getPosts = () => {
 		setPosts(new Array(postCount).fill(null))
@@ -31,6 +34,7 @@ export const BlogPostList = ({title, service}: BlogPostListProps) => {
 					return <BlogPostItem key={i} post={post}/>
 				}
 			})}
+			<li className="collection-item">{posts.length === 0 ? localization[locale].noNewPosts : ""}</li>
 		</ul>
 	);
 };

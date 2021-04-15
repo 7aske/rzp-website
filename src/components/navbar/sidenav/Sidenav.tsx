@@ -1,7 +1,7 @@
 import * as React from "react";
 import { createRef, useEffect, useRef } from "react";
 import * as M from "materialize-css";
-import "./Sidenav.css";
+import "./Sidenav.scss";
 // @ts-ignore
 import logo from "../../../assets/img/logo.png";
 

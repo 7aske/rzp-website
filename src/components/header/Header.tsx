@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./Header.css";
+import "./Header.scss";
 import useLocale from "../../hooks/useLocale";
 import localization from "./localization";
 import { BlogPostList } from "./blog/BlogPostList";

@@ -6,7 +6,7 @@
 	}
 	.card-action {
 		padding-top: 1em;
-		border-top: 1px solid $theme-green;
+		border-top: 1px solid $theme-primary;
 	}
 	.card-image {
 		cursor: pointer;
@@ -27,11 +27,11 @@
 
 	&:hover {
 		.card-image img {
-			border: 5px solid $theme-green-light;
+			border: 5px solid $theme-primary-light;
 		}
 
 		.card-action {
-			border-top: 1px solid $theme-green-light;
+			border-top: 1px solid $theme-primary-light;
 		}
 	}
 
@@ -39,7 +39,7 @@
 
 		h5 {
 			font-size: 2em;
-			color: $theme-green !important;
+			color: $theme-primary !important;
 			text-align: center;
 			width: 100%;
 		}
@@ -52,10 +52,10 @@
 	}
 
 	.more {
-		color: $theme-green !important;
+		color: $theme-primary !important;
 
 		&:hover {
-			background-color: $theme-green !important;
+			background-color: $theme-primary !important;
 			color: $theme-white !important;
 		}
 	}
@@ -70,7 +70,7 @@
 		width: 100%;
 
 		h4 {
-			color: $theme-green !important;
+			color: $theme-primary !important;
 		}
 
 		img {
@@ -78,7 +78,7 @@
 		}
 
 		.info .email {
-			color: $theme-green-light;
+			color: $theme-primary-light;
 			&:hover {
 				text-decoration: underline;
 				color: $theme-white;
@@ -87,10 +87,10 @@
 	}
 
 	.modal-close {
-		color: $theme-green;
+		color: $theme-primary;
 
 		&:hover {
-			background-color: $theme-green !important;
+			background-color: $theme-primary !important;
 			color: $theme-white;
 		}
 	}
@@ -102,7 +102,7 @@
 	}
 
 	.social-media {
-		border-top: 1px solid $theme-green-light;
+		border-top: 1px solid $theme-primary-light;
 		text-align: left;
 	}
 }

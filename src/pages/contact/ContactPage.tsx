@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ContactForm } from "../../components/contactForm/ContactForm";
-import "./ContactPage.css";
+import "./ContactPage.scss";
 // @ts-ignore
 import message from "../../assets/img/contact/message.svg";
 import useLocale from "../../hooks/useLocale";

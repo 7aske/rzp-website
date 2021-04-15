@@ -2,8 +2,7 @@ import * as React from "react";
 import { createRef, useEffect } from "react";
 import "../../assets/img/logo.png";
 import { Sidenav } from "./sidenav/Sidenav";
-import "./Navbar.css";
-// @ts-ignore
+import "./Navbar.scss";
 import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import useLocale from "../../hooks/useLocale";

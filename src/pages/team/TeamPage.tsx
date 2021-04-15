@@ -5,7 +5,7 @@ import { members } from "../../data/members";
 import useLocale from "../../hooks/useLocale";
 import { scrollToTop } from "../../utils/utils";
 import localization from "./localization";
-import "./TeamPage.css";
+import "./TeamPage.scss";
 
 export const TeamPage = () => {
 	const [locale] = useLocale();

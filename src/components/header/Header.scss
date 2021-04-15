@@ -6,7 +6,7 @@
 	color: $theme-white;
 
 	.title {
-		color: $theme-green;
+		color: $theme-primary;
 		font-size: 48px;
 	}
 
@@ -43,10 +43,10 @@
 
 			a {
 				padding-bottom: .25em;
-				color: $theme-green;
+				color: $theme-primary;
 
 				&:hover {
-					border-bottom: 2px solid $theme-green;
+					border-bottom: 2px solid $theme-primary;
 				}
 			}
 		}

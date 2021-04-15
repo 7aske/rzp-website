@@ -3,7 +3,7 @@ import { createRef, useEffect } from "react";
 import useLocale from "../../hooks/useLocale";
 import { SocialMediaIcon } from "../socialMediaIcon/SocialMediaIcon";
 import localization from "./localization";
-import "./MemberCard.css";
+import "./MemberCard.scss";
 
 type MemberCardProps = {
 	member: Member

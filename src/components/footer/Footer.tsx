@@ -5,17 +5,17 @@ import { blogUrl } from "../../globals";
 import localization from "./localization";
 import useLocale from "../../hooks/useLocale";
 import routes from "../../router/localization";
-import { scrollToTop } from "../../utils/utils";
+import { scrollToTop, scrollTo } from "../../utils/utils";
 
 export const Footer = () => {
 	const [locale] = useLocale();
 
 	const menuItems = [
-		<li key={0}><Link className="sidenav-close" to="/">{routes[locale].home}</Link></li>,
-		<li key={1}><Link className="sidenav-close" to="/about">{routes[locale].about}</Link></li>,
-		<li key={2}><Link className="sidenav-close" to="/team">{routes[locale].team}</Link></li>,
-		<li key={3}><Link className="sidenav-close" to="/contact">{routes[locale].contact}</Link></li>,
-		<li key={4}><a className="sidenav-close" target="blank" href={blogUrl}>{routes[locale].blog}</a></li>,
+		<li key={0}><a className="sidenav-close" onClick={scrollTo} href="#header">{routes[locale].home}</a></li>,
+		<li key={1}><a className="sidenav-close" onClick={scrollTo} href="#about">{routes[locale].about}</a></li>,
+		// <li key={2}><Link className="sidenav-close" to="/team">{routes[locale].team}</Link></li>,
+		<li key={3}><a className="sidenav-close" onClick={scrollTo} href="#contact">{routes[locale].contact}</a></li>,
+		// <li key={4}><a className="sidenav-close" target="blank" href={blogUrl}>{routes[locale].blog}</a></li>,
 	];
 
 	return (

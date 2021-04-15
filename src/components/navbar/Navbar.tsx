@@ -24,10 +24,10 @@ export const Navbar = () => {
 		<li key={1}><a className="sidenav-close" onClick={scrollTo} href="#about">{routes[locale].about}</a></li>,
 		// <li key={2}><a className="sidenav-close" onClick={scrollTo} href="#team">{routes[locale].team}</a></li>,
 		<li key={3}><a className="sidenav-close" onClick={scrollTo} href="#contact">{routes[locale].contact}</a></li>,
-		<li key={4}><a target="blank" className="sidenav-close" href={blogUrl}>{routes[locale].blog}</a></li>,
+		// <li key={4}><a target="blank" className="sidenav-close" href={blogUrl}>{routes[locale].blog}</a></li>,
 		<li key={5}><LocaleSwitch/></li>,
 	];
-	const scrollSpyItems = ["header", "about", "team", "contact"];
+	const scrollSpyItems = ["header", "about", "contact"];
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {

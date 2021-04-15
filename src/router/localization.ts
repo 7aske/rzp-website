@@ -1,6 +1,7 @@
 type RoutesLocalizationStrings = {
 	home: string;
 	about: string;
+	work: string;
 	team: string;
 	contact: string;
 	blog: string;
@@ -9,6 +10,7 @@ type RoutesLocalizationStrings = {
 
 const sr: RoutesLocalizationStrings = {
 	about: "O Nama",
+	work: "Radovi",
 	blog: "Blog",
 	contact: "Kontakt",
 	home: "Početna",
@@ -17,6 +19,7 @@ const sr: RoutesLocalizationStrings = {
 
 const en: RoutesLocalizationStrings = {
 	about: "About",
+	work: "Work",
 	blog: "Blog",
 	contact: "Contact",
 	home: "Home",

@@ -1,25 +1,41 @@
 @import "src/assets/css/index";
+
 #work {
-	.thumbs {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		.thumb:hover {
-			cursor: pointer;
-			@include border-color($theme-primary)
-		}
-		.thumb {
-			@include border-color($theme-grey)
-		}
-		.thumb.selected {
-			@include border-color($theme-primary)
+	& > h2 {
+		margin-bottom: 2em;
+	}
+
+	.carousel.carousel-slider {
+		z-index: 1000 !important;
+		img {
+			pointer-events: auto;
 		}
 	}
-	.slide {
-		div {
-			&, & img {
-				height: 100% !important;
-				width: auto;
+
+	.carousel {
+		height: initial;
+		.thumbs {
+			.thumb {
+				overflow-y: hidden;
+				text-align: center;
+				max-height: 5em;
+				img {
+					width: 100%;
+				}
+			}
+
+
+			.thumb:hover {
+				cursor: pointer;
+				@include border-color($theme-white)
+			}
+
+			.thumb {
+				@include border-color($theme-grey)
+			}
+
+			.thumb.selected {
+				@include border-color($theme-primary)
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 @import "theme";
 
-body {
+body, html {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,6 +10,7 @@ body {
 	background-color: $theme-dark;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	width: 100vw;
 }
 
 main {

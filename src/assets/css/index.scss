@@ -17,6 +17,10 @@ main {
 	padding-top: 7em;
 }
 
+nav {
+	user-select: none;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	monospace;

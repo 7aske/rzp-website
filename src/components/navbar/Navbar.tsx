@@ -28,7 +28,7 @@ export const Navbar = () => {
 		// <li key={5}><a target="blank" className="sidenav-close" href={blogUrl}>{routes[locale].blog}</a></li>,
 		<li key={6}><LocaleSwitch/></li>,
 	];
-	const scrollSpyItems = ["header", "about", "contact"];
+	const scrollSpyItems = ["header", "about", "work", "contact"];
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
@@ -45,7 +45,7 @@ export const Navbar = () => {
 		});
 
 		// eslint-disable-next-line
-	}, []);
+	});
 
 	return (
 		<nav ref={navRef} id="nav">

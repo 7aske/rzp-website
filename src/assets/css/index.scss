@@ -26,19 +26,29 @@ code {
 	monospace;
 }
 
+a {
+	color: $theme-primary;
+
+	&:hover {
+		color: $theme-primary-light;
+	}
+}
+
 ::-webkit-scrollbar {
-	 width: .5em;
- }
+	width: .5em;
+}
 
 ::-webkit-scrollbar-track {
-	//box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px $theme-dark;
+	background-color: $theme-dark;
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: $theme-primary;
+	border-radius: 4px;
 }
 
-::selection{
+::selection {
 	background-color: $theme-primary-light;
 	color: $theme-dark;
 }
@@ -102,5 +112,17 @@ code {
 
 .theme-grey {
 	@include bg-color($theme-grey);
+}
+
+.theme-white-text {
+	@include color($theme-white);
+}
+
+.theme-white-border {
+	@include border-color($theme-white);
+}
+
+.theme-white {
+	@include bg-color($theme-white);
 }
 

@@ -17,6 +17,7 @@ nav#nav {
 	&.fixed {
 		.current {
 			background-color: $theme-primary-light;
+
 			a {
 				color: $theme-dark;
 			}
@@ -32,9 +33,17 @@ nav#nav {
 	z-index: 1000;
 	background-color: $theme-dark;
 	height: $navbar-height;
+	overflow: hidden;
 
-	.nav-logo, .nav-logo img {
-		height: 100%;
+	.nav-logo {
+		position: relative;
+		display: inline-block;
+		top: calc(50% + 1em);
+		transform: translate(0, -50%);
+	}
+
+	.nav-logo img {
+		height: $navbar-height;
 	}
 
 	.spacer {

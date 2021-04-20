@@ -3,14 +3,13 @@ import { createRef, useEffect } from "react";
 import "../../assets/img/logo.png";
 import { Sidenav } from "./sidenav/Sidenav";
 import "./Navbar.scss";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo-large.png";
 import { useLocation } from "react-router-dom";
 import useLocale from "../../hooks/useLocale";
 import { LocaleSwitch } from "../localization/LocaleSwitch";
 import routes from "../../router/localization";
-import { blogUrl } from "../../globals";
 import Scrollspy from "react-scrollspy";
-import {scrollTo} from "../../utils/utils";
+import { scrollTo } from "../../utils/utils";
 
 
 export const Navbar = () => {
@@ -31,7 +30,7 @@ export const Navbar = () => {
 	const scrollSpyItems = ["header", "about", "work", "contact"];
 
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
+		window.onscroll = () => {
 			const scroll = window.scrollY;
 			if (!navRef.current)
 				return;
@@ -42,7 +41,7 @@ export const Navbar = () => {
 			} else if (scroll <= offset) {
 				navRef.current.classList.remove("fixed");
 			}
-		});
+		};
 
 		// eslint-disable-next-line
 	});

@@ -14,6 +14,18 @@
 
 	.carousel {
 		height: initial;
+		.work-href {
+			i {
+				margin-right: 0.25em;
+			}
+			position: absolute;
+			font-size: 1.25em;
+			padding: 1em;
+			right: 0;
+			bottom: 0;
+			background-color: $theme-black-alpha;
+		}
+
 		.thumbs {
 			.thumb {
 				overflow-y: hidden;
@@ -37,6 +49,10 @@
 			.thumb.selected {
 				@include border-color($theme-primary)
 			}
+		}
+
+		.carousel-status {
+			font-size: 1em;
 		}
 	}
 }

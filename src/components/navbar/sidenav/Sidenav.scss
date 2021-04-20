@@ -1,6 +1,7 @@
 @import "../../../assets/css/theme";
 
 #sidenav {
+	overflow: hidden;
 	background-color: $theme-grey;
 
 	li, li a {
@@ -9,6 +10,11 @@
 
 	.user-view {
 		padding: 0 !important;
+
+		.logo img {
+			padding: 0.5em;
+			width: 100%;
+		}
 
 		.name {
 			color: $theme-primary !important;

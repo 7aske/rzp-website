@@ -4,6 +4,7 @@ import * as M from "materialize-css";
 import "./Sidenav.scss";
 // @ts-ignore
 import logo from "../../../assets/img/logo.png";
+import { email } from "../../../globals";
 
 type SidenavProps = {
 	menuItems: JSX.Element[];
@@ -26,11 +27,11 @@ export const Sidenav = (props: SidenavProps) => {
 						<a className="logo sidenav-close" href="#">
 							<img src={logo} alt="Logo"/>
 						</a>
-						<a className="name">
-							Company Name
+						<a className="name" href={`mailto:${email}`}>
+							Digitize.rs
 						</a>
-						<a className="email" href="mailto:company@gmail.com">
-							company@gmail.com
+						<a className="email" href={`mailto:${email}`}>
+							{email}
 						</a>
 					</div>
 				</li>

@@ -1,7 +1,5 @@
 import * as React from "react";
 import "./Footer.scss";
-import { Link } from "react-router-dom";
-import { blogUrl } from "../../globals";
 import localization from "./localization";
 import useLocale from "../../hooks/useLocale";
 import routes from "../../router/localization";
@@ -13,6 +11,7 @@ export const Footer = () => {
 	const menuItems = [
 		<li key={0}><a className="sidenav-close" onClick={scrollTo} href="#header">{routes[locale].home}</a></li>,
 		<li key={1}><a className="sidenav-close" onClick={scrollTo} href="#about">{routes[locale].about}</a></li>,
+		<li key={1}><a className="sidenav-close" onClick={scrollTo} href="#work">{routes[locale].work}</a></li>,
 		// <li key={2}><Link className="sidenav-close" to="/team">{routes[locale].team}</Link></li>,
 		<li key={3}><a className="sidenav-close" onClick={scrollTo} href="#contact">{routes[locale].contact}</a></li>,
 		// <li key={4}><a className="sidenav-close" target="blank" href={blogUrl}>{routes[locale].blog}</a></li>,

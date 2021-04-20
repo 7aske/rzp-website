@@ -22,7 +22,7 @@ export const Header = () => {
 					<Row>
 						<Col s={12} m={12} l={7} className="animate__animated animate__slideInLeft animate__fast">
 							<h4 className="title">
-								{localization[locale].title}
+								{localization[locale].title }<span className="theme-white-text">Digitize</span>.rs
 							</h4>
 							<p className="text">
 								{localization[locale].text}

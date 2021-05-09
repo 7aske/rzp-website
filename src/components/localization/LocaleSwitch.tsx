@@ -3,13 +3,13 @@ import useLocale, { locales } from "../../hooks/useLocale";
 
 export const LocaleSwitch = () => {
 	const [locale, setLocale] = useLocale();
+	const nextLocale = locales[(locales.indexOf(locale) + 1) % locales.length];
 
 	const toggleLocale = () => {
-		const newLocale = locales[(locales.indexOf(locale) + 1) % locales.length];
-		setLocale(newLocale);
+		setLocale(nextLocale);
 	};
 
 	return (
-		<a onClick={toggleLocale}>{locale.toUpperCase()}</a>
+		<a onClick={toggleLocale}>{nextLocale.toUpperCase()}</a>
 	);
 };

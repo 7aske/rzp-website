@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import * as M from "materialize-css";
 import localization from "./localization";
 import useLocale from "../../hooks/useLocale";
+import ReactTooltip from "react-tooltip";
 
 type ContactFormProps = {};
 export const ContactForm = (props: ContactFormProps) => {
@@ -14,7 +15,7 @@ export const ContactForm = (props: ContactFormProps) => {
 	});
 
 	return (
-		<div className="row">
+		<div className="row contact-form">
 			<form className="col s12">
 				<div className="row">
 					<div className="input-field col s12">
@@ -40,7 +41,8 @@ export const ContactForm = (props: ContactFormProps) => {
 				</div>
 				<div className="row">
 					<div className="col s12">
-						<input type="submit" value={localization[locale].submit} className="btn"/>
+						<button data-tip={localization[locale].availableSoon} type="submit" className="btn theme-primary">{localization[locale].submit}</button>
+						<ReactTooltip place="top" effect="solid"/>
 					</div>
 				</div>
 			</form>

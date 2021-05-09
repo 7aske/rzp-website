@@ -2,9 +2,21 @@
 
 section#contact {
 	min-height: 60vh;
-	padding-top: 2em;
+	//padding-top: 2em;
+	margin-top: 2em;
 	.contact-us {
 		color: $theme-primary;
+	}
+	.contact-form {
+		input {
+			pointer-events: none;
+		}
+		button:focus {
+			background-color: $theme-primary;
+		}
+		button:hover {
+			background-color: $theme-primary-light;
+		}
 	}
 	.contact-us ~ p {
 		color: $theme-white;

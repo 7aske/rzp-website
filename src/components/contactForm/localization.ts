@@ -1,11 +1,12 @@
 type ContactFormLocalizationStrings = {
-	nameLabel:string;
-	namePlaceholder:string;
-	emailLabel:string;
-	emailPlaceholder:string;
-	messageLabel:string;
-	messagePlaceholder:string;
+	nameLabel: string;
+	namePlaceholder: string;
+	emailLabel: string;
+	emailPlaceholder: string;
+	messageLabel: string;
+	messagePlaceholder: string;
 	submit: string;
+	availableSoon: string;
 	[key: string]: string;
 }
 
@@ -16,7 +17,8 @@ const sr: ContactFormLocalizationStrings = {
 	messagePlaceholder: "Vaša poruka...",
 	nameLabel: "Ime",
 	namePlaceholder: "Ivana Ivanović",
-	submit: "Pošalji"
+	submit: "Pošalji",
+	availableSoon: "Dostupno uskoro",
 };
 
 const en: ContactFormLocalizationStrings = {
@@ -26,7 +28,8 @@ const en: ContactFormLocalizationStrings = {
 	messagePlaceholder: "Your message...",
 	nameLabel: "Name",
 	namePlaceholder: "Jane Doe",
-	submit: "Submit"
+	submit: "Submit",
+	availableSoon: "Available soon"
 };
 
 const localization: Localized<ContactFormLocalizationStrings> = {en, sr};

@@ -9,7 +9,8 @@ import useLocale from "../../hooks/useLocale";
 import { LocaleSwitch } from "../localization/LocaleSwitch";
 import routes from "../../router/localization";
 import Scrollspy from "react-scrollspy";
-import { scrollTo } from "../../utils/utils";
+import { scrollTo, scrollToTop } from "../../utils/utils";
+import { Button, Icon } from "react-materialize";
 
 
 export const Navbar = () => {
@@ -17,6 +18,7 @@ export const Navbar = () => {
 	const location = useLocation();
 
 	const navRef = createRef<HTMLElement>();
+	const fabRef = createRef<HTMLButtonElement>();
 
 	const menuItems = [
 		<li key={0}><a className="sidenav-close" onClick={scrollTo} href="#header">{routes[locale].home}</a></li>,
@@ -38,8 +40,10 @@ export const Navbar = () => {
 
 			if (scroll > navRef.current!.offsetHeight + offset) {
 				navRef.current.classList.add("fixed");
+				fabRef.current?.classList.add("theme-black");
 			} else if (scroll <= offset) {
 				navRef.current.classList.remove("fixed");
+				fabRef.current?.classList.remove("theme-black");
 			}
 		};
 
@@ -60,6 +64,11 @@ export const Navbar = () => {
 					className="material-icons">menu</i></a>
 			</div>
 			<Sidenav menuItems={menuItems}/>
-
+			<Button floating
+			        className="fab-top"
+			        large
+			        onClick={scrollToTop}
+			        icon={<Icon>vertical_align_top</Icon>}
+			        node="button"/>
 		</nav>);
 };

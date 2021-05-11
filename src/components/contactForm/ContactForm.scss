@@ -1,6 +1,6 @@
 @import "src/assets/css/theme";
 
-#modal-success-message {
+#modal-success-message, #modal-error-message {
 	&.modal, &.modal .modal-content {
 		max-width: 600px !important;
 	}
@@ -12,7 +12,7 @@
 
 
 @media screen and (max-width: 900px) {
-	#modal-success-message {
+	#modal-success-message, #modal-error-message {
 		height: 200px !important;
 
 		button {

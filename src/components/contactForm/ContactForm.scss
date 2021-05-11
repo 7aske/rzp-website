@@ -1,0 +1,28 @@
+@import "src/assets/css/theme";
+
+#modal-success-message {
+	&.modal, &.modal .modal-content {
+		max-width: 600px !important;
+	}
+
+	button {
+		color: $theme-white;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	#modal-success-message {
+		height: 200px !important;
+
+		button {
+			color: $theme-white;
+		}
+
+		&.modal, &.modal .modal-content {
+			max-height: 200px !important;
+			overflow-y: hidden;
+		}
+	}
+
+}

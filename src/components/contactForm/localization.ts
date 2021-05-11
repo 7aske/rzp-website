@@ -1,3 +1,5 @@
+import { strict } from "assert";
+
 type ContactFormLocalizationStrings = {
 	senderLabel: string;
 	senderPlaceholder: string;
@@ -7,6 +9,8 @@ type ContactFormLocalizationStrings = {
 	messagePlaceholder: string;
 	submit: string;
 	availableSoon: string;
+	messageSuccess: string;
+	messageFailure: string;
 	[key: string]: string;
 }
 
@@ -19,6 +23,8 @@ const sr: ContactFormLocalizationStrings = {
 	senderPlaceholder: "Ivana Ivanović",
 	submit: "Pošalji",
 	availableSoon: "Dostupno uskoro",
+	messageSuccess: "Uspešno ste poslali poruku",
+	messageFailure: "Ups. Došlo je do greške",
 };
 
 const en: ContactFormLocalizationStrings = {
@@ -28,8 +34,10 @@ const en: ContactFormLocalizationStrings = {
 	messagePlaceholder: "Your message...",
 	senderLabel: "Name",
 	senderPlaceholder: "Jane Doe",
-	submit: "Submit",
-	availableSoon: "Available soon"
+	submit: "Send",
+	availableSoon: "Available soon",
+	messageSuccess: "Message sent successfully",
+	messageFailure:"Oops. Error occurred."
 };
 
 const localization: Localized<ContactFormLocalizationStrings> = {en, sr};

@@ -24,7 +24,7 @@ export const Header = () => {
 							<h4 className="title">
 								{localization[locale].title }<span className="theme-white-text">Digitize</span>.rs
 							</h4>
-							<p className="text">
+							<p className="flow-text">
 								{localization[locale].text}
 							</p>
 						</Col>

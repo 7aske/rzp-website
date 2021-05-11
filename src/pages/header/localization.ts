@@ -7,13 +7,13 @@ type HeaderLocalizationStrings = {
 
 const sr: HeaderLocalizationStrings = {
 	title: "Digitalizujte vaš biznis sa ",
-	text: "RS - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur distinctio ducimus error eveniet facilis, fuga impedit iste maxime minus perspiciatis quam quas saepe tenetur ullam vitae, voluptas voluptate. Libero.",
+	text: "Tim entuzijasta okupljen sa idejom da digitalizuje Vaš brend.",
 	latestPosts: "Najnovije objave",
 };
 
 const en: HeaderLocalizationStrings = {
 	title: "Digitize your business with ",
-	text: "EN - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur distinctio ducimus error eveniet facilis, fuga impedit iste maxime minus perspiciatis quam quas saepe tenetur ullam vitae, voluptas voluptate. Libero.",
+	text: "Team of enthusiasts with an idea to digitize your brand.",
 	latestPosts: "Latest posts",
 };
 

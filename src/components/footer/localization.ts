@@ -1,10 +1,10 @@
 type FooterLocalizationStrings = {
 	company: string;
-	text: string;
+	text: string[];
 	resources: string;
 	copyright: string;
 	toTop: string;
-	[key: string]: string;
+	[key: string]: string | string[];
 }
 
 const sr: FooterLocalizationStrings = {
@@ -12,7 +12,10 @@ const sr: FooterLocalizationStrings = {
 	copyright: ``,
 	// copyright: `© ${new Date().getFullYear()} Digitize.rs. Sva prava zadržana.`,
 	resources: "Resursi",
-	text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque cupiditate in incidunt laudantium quasi quibusdam quod, sequi! Debitis eligendi illo inventore itaque pariatur quibusdam quisquam recusandae, sequi suscipit voluptatum.",
+	text: [
+		"\"People who avoid failure, also avoid success\"",
+		"- Kiyosaki",
+	],
 	toTop: "Nazad na vrh",
 };
 
@@ -21,7 +24,10 @@ const en: FooterLocalizationStrings = {
 	copyright: ``,
 	// copyright: `© ${new Date().getFullYear()} Digitize.rs. All rights reserved.`,
 	resources: "Resources",
-	text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque cupiditate in incidunt laudantium quasi quibusdam quod, sequi! Debitis eligendi illo inventore itaque pariatur quibusdam quisquam recusandae, sequi suscipit voluptatum.",
+	text: [
+		"\"People who avoid failure, also avoid success\"",
+		"- Kiyosaki",
+	],
 	toTop: "Back to top",
 
 };

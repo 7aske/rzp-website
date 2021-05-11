@@ -2,25 +2,26 @@
 
 section#contact {
 	min-height: 60vh;
-	//padding-top: 2em;
 	margin-top: 2em;
+
 	.contact-us {
 		color: $theme-primary;
 	}
+
 	.contact-form {
-		input {
-			pointer-events: none;
-		}
 		button:focus {
 			background-color: $theme-primary;
 		}
+
 		button:hover {
 			background-color: $theme-primary-light;
 		}
 	}
+
 	.contact-us ~ p {
 		color: $theme-white;
 	}
+
 	.art {
 		img {
 			width: 100%;
@@ -28,7 +29,7 @@ section#contact {
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
 	div#contact {
 		padding-top: 2em;
 	}

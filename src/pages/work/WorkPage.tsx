@@ -19,7 +19,7 @@ export const WorkPage = () => {
 	const [locale] = useLocale();
 
 	const wrapImage = (src: any) => {
-		return <a target="_blank" href={src.image}>
+		return <a target="_blank" href={src.image} key={src}>
 			<a target="_blank" href={src.href} className="work-href">
 				<i className="tiny material-icons">open_in_new</i>{src.href}
 			</a>

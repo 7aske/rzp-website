@@ -25,7 +25,8 @@ export const AboutPage = () => {
 					<Col s={12} m={12} l={4}><img src={teamwork} alt="Team"/></Col>
 					<Col s={12} m={12} l={4} className="text">
 						<ul className="browser-default">
-							{(localization[locale].smallTeamsText as string[]).map(str => <li>{str}</li>)}
+							{(localization[locale].smallTeamsText as string[])
+								.map(str => <li key={str}>{str}</li>)}
 						</ul>
 					</Col>
 				</Row>
@@ -35,7 +36,7 @@ export const AboutPage = () => {
 					<Col s={12} m={12} l={4}><img src={team} alt="Team"/></Col>
 					<Col s={12} m={12} l={4} className="text">
 						<ul className="browser-default">
-							{(localization[locale].clientAsPartnerText as string[]).map(str => <li>{str}</li>)}
+							{(localization[locale].clientAsPartnerText as string[]).map(str => <li key={str}>{str}</li>)}
 						</ul>
 					</Col>
 				</Row>

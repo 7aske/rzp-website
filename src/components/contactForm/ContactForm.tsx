@@ -1,9 +1,10 @@
 import * as React from "react";
-import { useEffect } from "react";
+import { useEffect, FormEvent } from "react";
 import * as M from "materialize-css";
 import localization from "./localization";
 import useLocale from "../../hooks/useLocale";
-import ReactTooltip from "react-tooltip";
+import { sendContact } from "../../services/contactService";
+import { ContactMessage } from "../../@types/ContactMessage";
 
 type ContactFormProps = {};
 export const ContactForm = (props: ContactFormProps) => {
@@ -11,17 +12,29 @@ export const ContactForm = (props: ContactFormProps) => {
 
 	useEffect(() => {
 		M.updateTextFields();
-
 	});
+
+	const onSubmit = (event: FormEvent) => {
+		event.preventDefault();
+		const target = event.target as HTMLFormElement;
+		const data: ContactMessage = {
+			sender: (target["sender"] as unknown as HTMLInputElement).value,
+			email: target["email"].value,
+			message: target["message"].value,
+		};
+
+		sendContact(data)
+			.then(console.log);
+	}
 
 	return (
 		<div className="row contact-form">
-			<form className="col s12">
+			<form className="col s12" autoComplete="off" onSubmit={onSubmit}>
 				<div className="row">
 					<div className="input-field col s12">
-						<input placeholder={localization[locale].namePlaceholder} id="name" type="text"
+						<input placeholder={localization[locale].senderPlaceholder} id="sender" type="text"
 						       className="validate"/>
-						<label htmlFor="name">{localization[locale].nameLabel}</label>
+						<label htmlFor="sender">{localization[locale].senderLabel}</label>
 					</div>
 				</div>
 
@@ -41,8 +54,7 @@ export const ContactForm = (props: ContactFormProps) => {
 				</div>
 				<div className="row">
 					<div className="col s12">
-						<button data-tip={localization[locale].availableSoon} type="submit" className="btn theme-primary">{localization[locale].submit}</button>
-						<ReactTooltip place="top" effect="solid"/>
+						<button type="submit" className="btn theme-primary">{localization[locale].submit}</button>
 					</div>
 				</div>
 			</form>

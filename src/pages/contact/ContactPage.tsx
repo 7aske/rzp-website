@@ -19,7 +19,7 @@ export const ContactPage = () => {
 				<Container>
 					<Col s={12} m={12} l={6} className="animate__animated animate__fadeInDown animate__fast">
 						<h4 className="contact-us">{localization[locale].title}</h4>
-						<p>{localization[locale].text}</p>
+						<p className="flow-text">{localization[locale].text}</p>
 						<ContactForm/>
 					</Col>
 					<Col s={12} m={12} l={6} className={"art hide-on-med-and-down animate__animated animate__fadeInUp animate__fast"}>

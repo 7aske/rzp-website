@@ -6,8 +6,7 @@ export const scrollToTop = (ev?: React.MouseEvent<any, any>) => {
 };
 
 export const scrollTo = (ev?: React.MouseEvent<any, any>) => {
-	const nav = document.querySelector("nav");
-	const offset = nav ? 60 : 0;
+	const offset = 60;
 	if (!ev) return;
 	ev.preventDefault();
 	const url = new URL((ev.target as HTMLAnchorElement).href);

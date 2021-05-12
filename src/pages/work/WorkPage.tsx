@@ -37,7 +37,7 @@ export const WorkPage = () => {
 			<h2 className="theme-primary-text center">{localization[locale].title}</h2>
 			<Container>
 				<div style={{userSelect: "none"}}>
-					<Carousel autoPlay={false} swipeable={true} showStatus={false} showThumbs={true}>
+					<Carousel autoPlay={false} infiniteLoop={true} swipeable={true} showStatus={false} showThumbs={true}>
 						{images.map(wrapImage)}
 					</Carousel>
 				</div>

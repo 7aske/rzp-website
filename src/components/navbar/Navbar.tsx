@@ -34,6 +34,7 @@ export const Navbar = () => {
 	useEffect(() => {
 		window.onscroll = () => {
 			const scroll = window.scrollY;
+			console.log(scroll);
 			if (!navRef.current)
 				return;
 			const offset = parseFloat(getComputedStyle(document.body, null).fontSize) * 3;

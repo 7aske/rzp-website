@@ -5,6 +5,7 @@ import "./Sidenav.scss";
 // @ts-ignore
 import logo from "../../../assets/img/logo.png";
 import { email } from "../../../globals";
+import { Button, Icon } from "react-materialize";
 
 type SidenavProps = {
 	menuItems: JSX.Element[];
@@ -16,12 +17,19 @@ export const Sidenav = (props: SidenavProps) => {
 
 	useEffect(() => {
 		if (sidenavRef.current)
-			sidenavInstance.current = M.Sidenav.init(sidenavRef.current, {draggable: false, edge: "right"});
+			sidenavInstance.current = M.Sidenav.init(sidenavRef.current, {
+				draggable: false, edge: "right",
+				onOpenStart: () => document.body.style.maxHeight = "100vh",
+				onCloseEnd: () => document.body.style.maxHeight = ""
+			});
 	}, [sidenavRef]);
 
 	return (
 		<div>
 			<ul ref={sidenavRef} id="sidenav" className="sidenav">
+				<li className="close">
+					<Button className="btn-flat btn-close sidenav-close"><Icon className="theme-white-text left">close</Icon></Button>
+				</li>
 				<li>
 					<div className="user-view">
 						<a className="logo sidenav-close" href="#">

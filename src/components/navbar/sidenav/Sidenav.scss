@@ -8,12 +8,23 @@
 		color: $theme-white;
 	}
 
+	.close {
+		text-align: right;
+
+		.btn-close {
+			right: 0;
+			top: 0;
+		}
+	}
+
 	.user-view {
 		padding: 0 !important;
 
 		.logo img {
 			padding: 0.5em;
-			width: 100%;
+			display: block;
+			margin: 0 auto;
+			width: 70%;
 		}
 
 		.name {

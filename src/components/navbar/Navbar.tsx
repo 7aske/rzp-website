@@ -56,7 +56,7 @@ export const Navbar = () => {
 			<div className="spacer"/>
 			<div className="menu container">
 				<a href="#" className="nav-logo"><img src={logo} alt="Logo"/></a>
-				<Scrollspy items={scrollSpyItems}
+				<Scrollspy offset={-(window.innerHeight/2)} items={scrollSpyItems}
 				           currentClassName={"current"}
 				           className="menu right hide-on-med-and-down">
 					{menuItems}

@@ -16,7 +16,7 @@ const images = [
 	{image: zenBlog, href: "https://zenmasaza.com/blog", text: "Zen masaža Blog"},
 	{image: un1t, href: "https://un1tgroup.com", text: "UN1T Group"},
 	{image: dobraCena, href: "https://dobracena.rs", text: "Dobra Cena"},
-	{image: frigo, href: "http://frigo.7aske.xyz", text: "Frigo Nekretnine"},
+	{image: frigo, href: "https://frigonekretnine.com", text: "Frigo Nekretnine"},
 ];
 
 export const WorkPage = () => {
